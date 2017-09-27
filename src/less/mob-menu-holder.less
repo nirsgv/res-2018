@@ -1,0 +1,103 @@
+#root .mob-menu-holder{
+  &.closed{
+    opacity: 0;
+    pointer-events: none;
+  }
+  @media @max640{
+    background-color: rgba(40,40,40,0);
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.15s ease-in, opacity 0.15s ease-in;
+    &.opened{
+      background-color: rgba(40,40,40,1);
+      pointer-events: all;
+    }
+    .menu-holder{
+      top: 40px;
+    }
+    .filter-holder{
+      top: 140px;
+
+    }
+    .menu-holder,.filter-holder {
+      display: block;
+      height: auto;
+      width: 100%;
+      position: relative;
+      top: auto;
+      float: right;
+      ul{
+        top: auto;
+        width: 100%;
+        display: block;
+        position: relative;
+        transform: none;
+        li{
+          width: 100%;
+          display: block;
+          .font-size(2.6);
+          padding: 14px 0;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+      }
+    }
+    .menu-holder{
+      height: auto
+    }
+    .close-mobile-menu-btn{
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background: #000;
+      position: absolute;
+      left: 20px;
+      color: #fff;
+      content: 'חזרה';
+      .x-holder{
+        position: inherit;
+        width: 20px;
+        height: 20px;
+        //border: 2px solid #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        span{
+          &.x1,&.x2{
+            position: inherit;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px;
+            height: 10px;
+            background-color: @res-mid-grey;
+          }
+          &.x1{
+            width: 6px;
+            height: 18px;
+
+          }
+          &.x2{
+            width: 18px;
+            height: 6px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.mob-menu-holder.mob-only.opened{
+  animation-name: mob-menu-in-movement;
+  animation-duration: .5s;
+
+}
+.mob-menu-holder.mob-only.closed{
+  animation-name: mob-menu-out-movement;
+  animation-duration: .5s;
+}
