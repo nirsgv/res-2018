@@ -1,0 +1,27 @@
+section.schedule-video-tab{
+  width: 100%;
+  height: ~'calc(100% - 54px)';
+  position: absolute;
+  overflow: hidden;
+  @media @min640{
+    height: ~'calc(100% - 114px)';
+  }
+  .pop-up-inner{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    padding-bottom: 56.25%;
+    text-align: center;
+    .pop-up-inner.video-mod .video-js {
+      position: absolute;
+      height: 0;
+      top: 0;
+      padding-bottom: 56.25%;
+      width: ~'calc(100% - 350px)'!important;
+      left: 50%!important;
+      transform: translate(-50%,0)!important;
+    }
+  }
+}
