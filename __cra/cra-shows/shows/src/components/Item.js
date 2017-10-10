@@ -9,7 +9,7 @@ class Items extends Component {
 render() {
         return(
         <div className="thumb">
-            <Img src={this.props.data.thumb_img} alt={this.props.data.label}/>
+            <Img src={`${window.img_prefix}${this.props.data.thumb_img}`} alt={this.props.data.label}/>
             <Label className="show-title">
                 {this.props.data.label}
             </Label>

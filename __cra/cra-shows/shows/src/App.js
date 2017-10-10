@@ -213,7 +213,7 @@ class App extends Component {
                     paragraph: 'קבוצה של ישראלים  מכל תחומי החיים והחברה מוצאת את עצמה על אי בודד מהיפים בעולם, כשחבריה נלחמים על תואר השורד האחרון. התכנית מזמינה את הצופים לחוויה יוצאת דופן של אתגרים פיזיים וחברתיים בניתוק מוחלט מהעולם החיצון.',
                     day: '',
                     hour: '',
-                    brightcove_ref: 'parenthood-six-mothers-season-03-episodes-06_full_uUQYj0vZ'
+                    brightcove_ref: ''
 
                 }, {
                     id: 17,
@@ -231,22 +231,37 @@ class App extends Component {
                     id: 18,
                     pop_up_type: 'image_box',
                     label: 'העולם הבוקר',
-                    thumb_img: 'img/thumbs/monsters_428x211.jpg',
-                    main_img: 'img/full/monsters_693x342.jpg',
-                    tags: ['DRAMA_TAG'],
+                    thumb_img: 'img/thumbs/HaolamHaboker_428x211_D.jpg',
+                    main_img: 'img/full/HaolamHaboker_693x342_D.jpg',
+                    tags: ['DAYTIME_TAG'],
                     paragraph: "אברי גלעד הילה קורח, מאיה זיו ואלעד זוהר. תכנית הבוקר המובילה של ישראל, עם כל מה שאתם צריכים לדעת לפני שאתם מתחילים את היום שלכם. אקטואליה, אקטואליה רכה וצבע; עדכון של הנעשה ברשתות החברתיות, הובלת אג'נדות ועוד.",
+                    day: '',
+                    hour: '',
+                    brightcove_ref: 'b2b_reshet13_day_time'
+
+                }, {
+                    id: 19,
+                    pop_up_type: 'image_box',
+                    label: 'העולם הבוקר החיים הטובים',
+                    thumb_img: 'img/thumbs/Hahaim_Hatovim_428x211.jpg',
+                    main_img: 'img/full/Haaim_Hatovim_693x342.jpg',
+                    tags: ['DAYTIME_TAG'],
+                    paragraph: `קובי מחט , יעל בר זוהר ודנה פאן לוזאן.
+תכנית לייף סטייל עם כל מה שפרקטי, חדש, מרגש וכייפי.
+כלכלת הבית, בישול, אופנה, סיפורים אישיים מעוררי השראה, תרבות, בידור, הורות, תזונה, בילויים ועוד.
+`,
                     day: '',
                     hour: '',
                     brightcove_ref: ''
 
                 }, {
-                    id: 15,
+                    id: 20,
                     pop_up_type: 'image_box',
-                    label: 'קפיצה למחר',
+                    label: 'פודיז',
                     thumb_img: 'img/thumbs/jump_428x211.jpg',
                     main_img: 'img/full/jump_693x342.jpg',
                     tags: ['DOC_REALITY_TAG'],
-                    paragraph: '',
+                    paragraph: `תכנית אירוח קולינארית בשידור חי בהנחיית נועה רוזין שמביאה את כל מה שכדאי לדעת על אוכל ומה שסביבו בארץ, בעולם וברשתות החברתיות.`,
                     day: '',
                     hour: '',
                     brightcove_ref: ''

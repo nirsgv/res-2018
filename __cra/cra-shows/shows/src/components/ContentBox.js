@@ -12,7 +12,7 @@ class ContentBox extends Component {
     componentDidMount(){
     }
 render() {
-
+console.log(window.ENV);
     let dat = this.props.data;
     const vidImgSwitch = dat.pop_up_type;
     let innerClassSwitch = (vidImgSwitch==='video_box') ? 'video-mod' : 'image-mod';
@@ -25,7 +25,7 @@ render() {
                        :  <div className={`pop-up-inner ${innerClassSwitch}`}>
                                 <div className='img-holder'>
                                     <figure>
-                                        <img src={dat.main_img} alt={dat.alt} 
+                                        <img src={`${window.img_prefix}${dat.main_img}`} alt={dat.alt}
                                     />
                                         <figcaption>{dat.label}</figcaption>
                                         <h4 className="paragraph">{dat.paragraph}</h4>
