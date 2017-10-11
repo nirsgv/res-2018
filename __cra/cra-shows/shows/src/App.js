@@ -24,8 +24,8 @@ class App extends Component {
             pop_up_item_id: 0,
             myCounter: 3,
             menu_items:['תכניות','לוח שידורים'],
-            filter_items:['כל התוכניות', 'ריאליטי', 'דוקו ריאלטי', 'דוקו', 'דרמה', 'בידור', 'Day time'],
-            filters:['ALL_TAG','REALITY_TAG','DOC_REALITY_TAG','DOC_TAG','DRAMA_TAG','ENTERTAINMENT_TAG','DAYTIME_TAG'],
+            filter_items:['כל התוכניות', 'ריאליטי', 'דוקו ריאלטי', 'דוקו', 'דרמה', 'בידור', 'קומדיה', 'Day time'],
+            filters:['ALL_TAG','REALITY_TAG','DOC_REALITY_TAG','DOC_TAG','DRAMA_TAG','ENTERTAINMENT_TAG','COMEDY_TAG','DAYTIME_TAG'],
             filtered_by:['ALL_TAG'],
             schedules_presented_video: 'b2b_reshet13_x_factor_promo',
             shows: [
@@ -64,23 +64,23 @@ class App extends Component {
                     hour: '',
                     brightcove_ref: 'b2b_reshet13_hamidrasha'
                 } , {
-                 id: 4,
-                 pop_up_type: 'video_box',
-                 label: 'ההרמון',
-                 thumb_img: 'img/thumbs/harmon_428x211.jpg',
-                 main_img: 'img/full/harmon_693x342.jpg',
-                 tags: ['DRAMA_TAG'],
-                 paragraph: 'מותחן פסיכולוגי בכיכובו של אלון אבוטבול כשבתאי, מנהיג כת מניפולטיבי החי בפוליגמיה עם מספר רב של נשים  וילדיהם המשותפים. ההרמוניה נסדקת כשאחת מנשותיו מנסה להתנתק ממנו ולהפלילו בידי כוחות המשטרה.',
-                 day: '',
-                 hour: '',
-                 brightcove_ref: 'b2b_reshet13_harmon'
+                     id: 4,
+                     pop_up_type: 'video_box',
+                     label: 'ההרמון',
+                     thumb_img: 'img/thumbs/harmon_428x211.jpg',
+                     main_img: 'img/full/harmon_693x342.jpg',
+                     tags: ['DRAMA_TAG'],
+                     paragraph: 'מותחן פסיכולוגי בכיכובו של אלון אבוטבול כשבתאי, מנהיג כת מניפולטיבי החי בפוליגמיה עם מספר רב של נשים  וילדיהם המשותפים. ההרמוניה נסדקת כשאחת מנשותיו מנסה להתנתק ממנו ולהפלילו בידי כוחות המשטרה.',
+                     day: '',
+                     hour: '',
+                     brightcove_ref: 'b2b_reshet13_harmon'
                  }, {
                     id: 5,
                     pop_up_type: 'video_box',
                     label: 'נבסו',
                     thumb_img: 'img/thumbs/Nevsu_428x211_C.jpg',
                     main_img: 'img/full/Nevsu_693x342_C.jpg',
-                    tags: ['ENTERTAINMENT_TAG'],
+                    tags: ['COMEDY_TAG'],
                     paragraph: 'פרקים חדשים לקומדיה המצליחה שנמכרה לרשת פוקס האמריקאית ומציגה את המפגש בין משפחה ממוצא אתיופי למשפחה ממוצא ישראלי, ההופכות למשפחה ישראלית חדשה אחת.',
                     day: '',
                     hour: '',
@@ -145,7 +145,7 @@ class App extends Component {
 
                 }, {
                     id: 11,
-                    pop_up_type: 'image_box',
+                    pop_up_type: 'video_box',
                     label: 'משחקי השף',
                     thumb_img: 'img/thumbs/ChefGames_428x211.jpg',
                     main_img: 'img/full/ChefGames_693x342.jpg',
@@ -201,8 +201,6 @@ class App extends Component {
                     day: '',
                     hour: '',
                     brightcove_ref: 'b2b_reshet13_avudim'
-
-
                 }, {
                     id: 16,
                     pop_up_type: 'image_box',
@@ -229,7 +227,7 @@ class App extends Component {
 
                 }, {
                     id: 18,
-                    pop_up_type: 'image_box',
+                    pop_up_type: 'video_box',
                     label: 'העולם הבוקר',
                     thumb_img: 'img/thumbs/HaolamHaboker_428x211_D.jpg',
                     main_img: 'img/full/HaolamHaboker_693x342_D.jpg',
@@ -248,8 +246,7 @@ class App extends Component {
                     tags: ['DAYTIME_TAG'],
                     paragraph: `קובי מחט , יעל בר זוהר ודנה פאן לוזאן.
 תכנית לייף סטייל עם כל מה שפרקטי, חדש, מרגש וכייפי.
-כלכלת הבית, בישול, אופנה, סיפורים אישיים מעוררי השראה, תרבות, בידור, הורות, תזונה, בילויים ועוד.
-`,
+כלכלת הבית, בישול, אופנה, סיפורים אישיים מעוררי השראה, תרבות, בידור, הורות, תזונה, בילויים ועוד.`,
                     day: '',
                     hour: '',
                     brightcove_ref: ''
@@ -258,24 +255,80 @@ class App extends Component {
                     id: 20,
                     pop_up_type: 'image_box',
                     label: 'פודיז',
-                    thumb_img: 'img/thumbs/jump_428x211.jpg',
-                    main_img: 'img/full/jump_693x342.jpg',
-                    tags: ['DOC_REALITY_TAG'],
+                    thumb_img: 'img/thumbs/Foodies_428x211.jpg',
+                    main_img: 'img/full/Foodies_693x342.jpg',
+                    tags: ['DAYTIME_TAG'],
                     paragraph: `תכנית אירוח קולינארית בשידור חי בהנחיית נועה רוזין שמביאה את כל מה שכדאי לדעת על אוכל ומה שסביבו בארץ, בעולם וברשתות החברתיות.`,
                     day: '',
                     hour: '',
                     brightcove_ref: ''
                 }, {
-                    id: 16,
+                    id: 21,
                     pop_up_type: 'video_box',
-                    label: 'אקטואליה',
-                    thumb_img: 'img/thumbs/actual_428x211_A.jpg',
-                    main_img: 'img/full/actual_693x342_A.jpg',
+                    label: 'אקטואליות',
+                    thumb_img: 'img/thumbs/actoaliot_428x211_A.jpg',
+                    main_img: 'img/full/actoaliot_693x342_A.jpg',
                     tags: ['DAYTIME_TAG'],
-                    paragraph: '',
+                    paragraph: 'הנשים הכי חזקות ושנונות על המסך מדברות על אירועי היום בדרך שלא תשמעו בשום תכנית אחרת.',
                     day: '',
                     hour: '',
                     brightcove_ref: 'b2b_reshet13_day_time'
+                }, {
+                    id: 22,
+                    pop_up_type: 'video_box',
+                    label: 'לפני החדשות',
+                    thumb_img: 'img/thumbs/lifneyHadashot_428x211_A.jpg',
+                    main_img: 'img/full/LifneyHadashot_693x342_A.jpg',
+                    tags: ['DAYTIME_TAG'],
+                    paragraph: 'לוסי האריש ואודי סגל במבט על האקטואליה מזוויות קצת שונות.',
+                    day: '',
+                    hour: '',
+                    brightcove_ref: 'b2b_reshet13_day_time'
+                }, {
+                    id: 23,
+                    pop_up_type: 'video_box',
+                    label: 'הצנרת',
+                    thumb_img: 'img/thumbs/428x211_D.jpg',
+                    main_img: 'img/full/693x342_D.jpg',
+                    tags: ['DAYTIME_TAG'],
+                    paragraph: 'הצנרת מגזין הרשת בהנחיית גיא לרר במתכונת חדשה.',
+                    day: '',
+                    hour: '',
+                    brightcove_ref: 'b2b_reshet13_day_time'
+                }, {
+                    id: 24,
+                    pop_up_type: 'image_box',
+                    label: 'קפיצה למחר',
+                    thumb_img: 'img/thumbs/jump_428x211.jpg',
+                    main_img: 'img/full/jump_693x342.jpg',
+                    tags: ['DOC_REALITY_TAG'],
+                    paragraph: 'צופית גרנט יחד עם דמויות ידועות  יוצאת למסע בזמן, אל העתיד. היא וגיבוריה מצפים למה שטומן העתיד בחובו אך גם חוששים ממנו. במהלך הסדרה כל אחד מהמשתתפים יוכל להציץ אל דמותו בעתיד, ואולי לקבל החלטות טובות ונכונות יותר לגבי חייו בהווה.',
+                    day: '',
+                    hour: '',
+                    brightcove_ref: ''
+                }, {
+                    id: 25,
+                    pop_up_type: 'image_box',
+                    label: 'הטוב מכולם',
+                    thumb_img: 'img/thumbs/HatovMikulam_428x211.jpg',
+                    main_img: 'img/full/HatovMikulam_693x342.jpg',
+                    tags: ['ENTERTAINMENT_TAG'],
+                    paragraph: `בואו לבדוק האם אתם טובים יותר מחוכמת ההמונים! 
+אברי גלעד יאתגר אתכם במשחק הטלוויזיה המקורי ביותר על המסך כשלצדו הצוות המנצח: רוסלנה רודינה, טום באום, דודו ארז ומיכל מנור.`,
+                    day: '',
+                    hour: '',
+                    brightcove_ref: ''
+                }, {
+                    id: 26,
+                    pop_up_type: 'image_box',
+                    label: 'הכל הולך',
+                    thumb_img: 'img/thumbs/HakolHolech_428x211.jpg',
+                    main_img: 'img/full/HakolHolech_693x342.jpg',
+                    tags: ['ENTERTAINMENT_TAG'],
+                    paragraph: `בואו לשחק על במה עקומה! הקומיקאים המצחיקים ביותר והשחקנים המוכשרים ביותר עולים על הבמה - במשחק האלתורים הגדול של ישראל שבו הכול יכול לקרות!`,
+                    day: '',
+                    hour: '',
+                    brightcove_ref: ''
                 }
             ]
         };

@@ -280,8 +280,10 @@ ul.menu {
   float: right;
 }
 ul.items {
-  overflow: hidden;
   padding: 6px;
+}
+ul.items {
+  overflow: visible!important;
 }
 ul.items li.item {
   position: relative;

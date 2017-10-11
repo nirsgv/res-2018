@@ -302,7 +302,7 @@ ul.menu {
 }
 ul.items {
   padding: 0 6px 6px 6px;
-  overflow: hidden;
+  overflow: visible!important;
 }
 ul.items li.item {
   position: relative;
@@ -310,7 +310,6 @@ ul.items li.item {
   float: right;
   width: 100%;
   height: auto;
-  overflow: hidden;
   padding: 0 6px 12px 6px;
 }
 ul.items li.item:hover .thumb img {
@@ -378,7 +377,7 @@ section.opening-screen {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("/b2b-stage/wp-content/themes/adv/advShows/img/opening_shadow.png");
+  background-image: url("img/opening_shadow.png");
   top: 0;
   left: 0;
   background-repeat: no-repeat;
@@ -549,6 +548,12 @@ body .desktop-only {
   body .desktop-only {
     display: block;
   }
+}
+ul.items {
+  overflow: visible!important;
+}
+#root {
+  overflow-x: hidden;
 }
 header.header {
   height: 54px;
@@ -793,4 +798,7 @@ img {
 }
 .menu-holder {
   display: block;
+}
+ul.items {
+  overflow: visible!important;
 }

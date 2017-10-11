@@ -40,7 +40,7 @@ render() {
 
     return(
         <div className="items-holder">
-            <ul className="items">
+            <ul className="items c-hack">
 
                 {filteredItems}
 
