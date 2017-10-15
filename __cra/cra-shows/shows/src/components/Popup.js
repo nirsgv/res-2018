@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CloseBtn from './CloseBtn';
 import ContentBox from './ContentBox';
+import ContentBoxeExpanded from './ContentBoxeExpanded';
 import PropTypes from 'prop-types';
 
 class Popup extends Component {
@@ -14,9 +15,9 @@ class Popup extends Component {
     const chosenShow = dat.shows[arrIndex];
         return (
             <section className="pop-up" doit={this.go}>
-                <ContentBox data={chosenShow}>
+                <ContentBoxeExpanded data={chosenShow}>
                     <CloseBtn closePopup={this.props.closePopup}/>
-                </ContentBox>
+                </ContentBoxeExpanded>
             </section>
         )
     }

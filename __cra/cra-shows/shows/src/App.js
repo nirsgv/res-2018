@@ -21,7 +21,7 @@ class App extends Component {
             selected_filter_item_txt: "ALL_TAG",
             selected_filter_item_number: 0,
             pop_up_visible: false,
-            pop_up_item_id: 0,
+            pop_up_item_id: 3,
             myCounter: 3,
             menu_items:['תכניות','לוח שידורים'],
             filter_items:['כל התוכניות', 'ריאליטי', 'דוקו ריאלטי', 'דוקו', 'דרמה', 'בידור', 'קומדיה', 'Day time'],
@@ -64,17 +64,17 @@ class App extends Component {
                     hour: '',
                     brightcove_ref: 'b2b_reshet13_hamidrasha'
                 } , {
-                     id: 4,
-                     pop_up_type: 'video_box',
-                     label: 'ההרמון',
-                     thumb_img: 'img/thumbs/harmon_428x211.jpg',
-                     main_img: 'img/full/harmon_693x342.jpg',
-                     tags: ['DRAMA_TAG'],
-                     paragraph: 'מותחן פסיכולוגי בכיכובו של אלון אבוטבול כשבתאי, מנהיג כת מניפולטיבי החי בפוליגמיה עם מספר רב של נשים  וילדיהם המשותפים. ההרמוניה נסדקת כשאחת מנשותיו מנסה להתנתק ממנו ולהפלילו בידי כוחות המשטרה.',
-                     day: '',
-                     hour: '',
-                     brightcove_ref: 'b2b_reshet13_harmon'
-                 }, {
+                    id: 4,
+                    pop_up_type: 'video_box',
+                    label: 'ההרמון',
+                    thumb_img: 'img/thumbs/harmon_428x211.jpg',
+                    main_img: 'img/full/harmon_693x342.jpg',
+                    tags: ['DRAMA_TAG'],
+                    paragraph: 'מותחן פסיכולוגי בכיכובו של אלון אבוטבול כשבתאי, מנהיג כת מניפולטיבי החי בפוליגמיה עם מספר רב של נשים  וילדיהם המשותפים. ההרמוניה נסדקת כשאחת מנשותיו מנסה להתנתק ממנו ולהפלילו בידי כוחות המשטרה.',
+                    day: '',
+                    hour: '',
+                    brightcove_ref: 'b2b_reshet13_harmon'
+                }, {
                     id: 5,
                     pop_up_type: 'video_box',
                     label: 'נבסו',
@@ -100,8 +100,8 @@ class App extends Component {
                     id: 7,
                     pop_up_type: 'video_box',
                     label: 'מחר שבת',
-                    thumb_img: 'img/thumbs/zvi_428x211_A.jpg',
-                    main_img: 'img/full/zvi_693x342_A.jpg',
+                    thumb_img: 'img/thumbs/Shabat_428x211.jpg',
+                    main_img: 'img/full/Shabat_693x342.jpg',
                     tags: ['ENTERTAINMENT_TAG'],
                     paragraph: 'צביקה הדר בתכנית האירוח הכי ישראלית על המסך. בכל שבוע צביקה יארח באולפן את מיטב האומנים ואנשי השעה ויחד הם יסכמו בהומור את השבוע שהיה לכולנו.',
                     day: '',
@@ -119,7 +119,7 @@ class App extends Component {
                     hour: '',
                     brightcove_ref: 'b2b_reshet13_zvika'
                 },
-                 {
+                {
                     id: 9,
                     pop_up_type: 'video_box',
                     label: 'האח הגדול',

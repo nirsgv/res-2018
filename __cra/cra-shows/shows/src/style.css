@@ -517,7 +517,6 @@ section.opening-screen .hero.zooming-anima {
   animation-name: mob-menu-out-movement;
   animation-duration: .5s;
 }
-html.ie ul.items,
 html.ie li.item,
 html.ie .inner-pad {
   overflow: hidden!important;
