@@ -1,0 +1,51 @@
+.mob-menu-holder{
+  &.closed{
+    display: none;
+  }
+  @media @max640{
+    background-color: rgba(40,40,40,0);
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: background-color 0.15s ease-in;
+    &.opened{
+      background-color: rgba(40,40,40,1);
+      pointer-events: all;
+    }
+    .menu-holder{
+      top: 40px;
+    }
+    .filter-holder{
+      top: 140px;
+
+    }
+    .menu-holder,.filter-holder {
+      display: block;
+      height: auto;
+      width: 100%;
+      position: relative;
+      ul{
+        width: 100%;
+        display: block;
+        position: relative;
+        li{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    .menu-holder{
+      height: auto
+    }
+    .close-mobile-menu-btn{
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+    }
+  }
+}

@@ -6,14 +6,14 @@ import store, { history } from './store'
 import App from './containers/app'
 
 import 'sanitize.css/sanitize.css'
-import './index.css'
+import './assets/css/style.css'
 
 const target = document.querySelector('#root')
 
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div className="app-wrp">
         <App />
       </div>
     </ConnectedRouter>

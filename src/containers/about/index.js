@@ -1,10 +1,32 @@
 import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { Helmet } from 'react-helmet';
 
 const About = () => (
   <div>
-    <h1>About Page</h1>
-    <p>Did you get here via Redux?</p>
+      <Helmet
+          titleTemplate="%s - React.js Boilerplate"
+          defaultTitle="ABOUT"
+      >
+          <meta name="description" content="A React.js Boilerplate application" />
+      </Helmet>
+
+      <h1>אודות</h1>
+    <p>אודות</p>
   </div>
 )
 
-export default About
+const mapStateToProps = state => ({
+    count: state.counter.count,
+    webm: state.player.defaultSrcWebm,
+    fullState: state
+})
+debugger
+const mapDispatchToProps = dispatch => bindActionCreators({
+}, dispatch)
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(About)

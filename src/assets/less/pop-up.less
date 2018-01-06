@@ -1,0 +1,125 @@
+section.pop-up{
+  max-width: 800px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  padding-bottom: 40%;
+  height: 0;
+  @media @min1024{
+    max-height: 400px;
+    height: 0;
+    top: 200px;
+    transform: translate(-50%,0);
+
+
+  }
+  .close-btn{
+    width: 31px;
+    height: 31px;
+    border: 2px solid @res-grey;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 6;
+    cursor: pointer;
+    transition: border-color 0.1s ease-in;
+    span.x{
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+      display: inline-block;
+      color: @res-grey;
+      transition: color 0.1s ease-in;
+    }
+    &:hover{
+      border-color: #fff;
+      span.x{
+        color: #fff;
+      }
+    }
+  }
+  .pop-up-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .img-holder{
+      width: 100%;
+      figure{
+        position: absolute;
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        img{
+          position: absolute;
+          width: 100%;
+        }
+        figcaption{
+          bottom: 0;
+          width: 100%;
+          background: rgba(0,0,0,0.5);
+          height: 40px;
+          z-index: 41;
+          color: #fff;
+          position: absolute;
+          text-align: center;
+          font-size: 35px;
+        }
+      }
+    }
+    video.inner-video {
+      width: 100%;
+    }
+    .img-holder{
+      top: 46px;
+      width: 100%;
+      overflow: hidden;
+      img{
+      }
+    }
+    h4.paragraph{
+      bottom: -40px;
+      position: absolute;
+      height: 40px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  .pop-up-content{
+    color: #fff;
+    width: 100%;
+    height: inherit;
+    padding-bottom: 50%;
+    .show-indicators{
+      color: #fff;
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      height: 40px;
+      //outline: 4px dashed red;
+      width: 100%;
+      top: -40px;
+      h3{
+        font-size: 18px;
+        .font-size(2.4);
+        display: inline-block;
+        &.label{
+          font-weight: 400;
+        }
+        &.day{
+          margin-right: 20px;
+          font-weight: 100;
+        }
+        &.hour{
+          margin-right: 20px;
+          font-weight: 100;
+
+        }
+      }
+    }
+  }
+}
